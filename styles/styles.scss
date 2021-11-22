@@ -1,0 +1,170 @@
+@import "botones";
+@import "navbar";
+@import "estilos";
+@import "footer";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $color-blanco;
+
+  h1,
+  h2 {
+    font-family: $tipografia-titulos;
+    color: $color-rosa;
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-family: $tipografia-titulos;
+    color: $color-rosa;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 999;
+  }
+
+  h4 {
+    font-family: $tipografia-titulos;
+    text-transform: uppercase;
+    color: $color-azul;
+    font-weight: 900;
+    font-size: 1rem;
+  }
+}
+
+
+.columna-grillas {
+  padding-left: 2rem;
+  margin-left: 2rem;
+}
+
+/*ACA PONGO TODO LO DEL INDEX*/
+/*No se porque la parte de "proyectos-index" y "logo-empresas" no me la toma, 
+estaba centrada y ahora se me rompio al igual que el tamaño de los logos*/
+
+.banner-section {
+  margin: 4rem;
+  border-radius: 12px;
+  border-color: $color-azul;
+}
+
+.proyectos-index {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $tipografia-body;
+  font-size: 200%;
+  color: $color-gris;
+  padding-top: 5%;
+}
+
+.logo-empresas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.img-logoEmpresas {
+  width: 40%;
+}
+
+/*Aca la seccion contacto*/
+.section-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5% auto;
+
+  .form-group {
+    font-family: $tipografia-titulos;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    font-weight: 900;
+    color: $color-gris;
+    margin: 1%;
+  }
+
+  ::placeholder {
+    font-family: $tipografia-body;
+    font-size: 0.7rem;
+    letter-spacing: 0.5px;
+    color: $color-gris;
+    margin: 1%;
+    text-align: start;
+  }
+
+  input {
+    width: 300px;
+    height: 100%;
+    transition: all 1s;
+  }
+
+  #consulta {
+    height: 300px;
+    transition: all 1s;
+  }
+
+  input:focus {
+    transform: scale(1.1);
+    font-size: 1rem;
+  }
+}
+
+/*aca va el formato de la pagina que hacemos*/
+.section-cards {
+  background-image: url(https://i.ibb.co/f8Ks0q1/FONDO.png);
+  height: 35rem;
+}
+
+.container-banner {
+  background-color: $color-blanco;
+  padding: 2rem;
+  margin: 5rem;
+}
+
+.section-servicios {
+  margin: 2rem auto;
+}
+
+/*ACA PONGO LO DELA PAGINA COMO LO HACEMOS*/
+/*ACA ARMO UNA GRID PARA COMO LO HACEMOS */
+.gridContainer-comoLoHacemos {
+  display: grid;
+  /*QUIERO DOS FILAS*/
+  grid-template-rows: 25% 50%;
+  /* LE PONGO MEDIDAS RELATIVAS*/
+  grid-template-columns: 1fr 1fr;
+  gap: 2%;
+  text-align: justify;
+  margin-top: 2%;
+}
+
+.gridItem-comoLohacemos:first-child {
+  grid-column: 1 / 4;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 1%;
+}
+
+.p-comoLoHacemos1 {
+  font-family: $tipografia-body;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+  color: $color-gris;
+  margin: 1%;
+}
+

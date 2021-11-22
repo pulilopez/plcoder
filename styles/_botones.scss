@@ -1,0 +1,25 @@
+/*FORMATO BOTONES*/
+
+/*desde que puse el scss, se me rompio el fotmato de los botones no se porque*/
+
+.boton-grande{
+    padding: 3%;
+    margin: 1%;
+    background-image: linear-gradient($color-rosa, $color-azul);
+    color: $color-blanco;
+    font-weight: 900;
+    border-radius: 10%;
+    border-color: $color-rosa;
+    font-family: $tipografia-titulos;
+    font-size: 80%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.botton-grande:hover {
+    transform: translate(10px, 10px);
+    background-image: linear-gradient($color-azul, $color-rosa);
+    color: $color-blanco;
+    border-color: $color-blanco; }
+  

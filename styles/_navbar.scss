@@ -1,0 +1,39 @@
+
+
+.nav-general {
+    color: $color-blanco;
+    background-color:$color-rosa;
+  
+    .nav-formato {
+      color: $color-blanco;
+    }
+  
+    .img-logo {
+      width: 30%;
+      margin: auto;
+    }
+  
+    .enlace-activo {
+      text-decoration: none;
+      font-family: $tipografia-titulos;
+      font-size: 0.8em;
+      font-weight: 800;
+      color: $color-azul;
+      background-color: $color-blanco;
+    }
+    .enlace-menu {
+      text-decoration: none;
+      font-family: $tipografia-titulos;
+      font-size: 0.8em;
+      font-weight: 800;
+      color: $color-blanco;
+    }
+    .enlace-menu:hover {
+      color: cornsilk;
+      background-color: $color-azul;
+    }
+    .enlace-menu:active {
+      color:$color-azul;
+      background-color: $color-blanco;
+    }
+}
