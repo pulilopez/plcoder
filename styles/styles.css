@@ -1,9 +1,13 @@
-/* Error: Expected string.
- *   ,
- * 2 | @import: "estilos"
- *   |        ^
+/* Error: This file is already being loaded.
+ *   ,--> styles\_botones.scss
+ * 2 | @import "botones";
+ *   |         ^^^^^^^^^ new load
  *   '
- *   styles\_botones.scss 2:8  @import
+ *   ,--> styles\styles.scss
+ * 1 | @import "botones";
+ *   |         ========= original load
+ *   '
+ *   styles\_botones.scss 2:9  @import
  *   styles\styles.scss 1:9    root stylesheet */
 
 body::before {
@@ -14,5 +18,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: 'Error: Expected string.\a   \2577 \a 2 \2502  @import: "estilos"\d\a   \2502         ^\a   \2575 \a   styles\\_botones.scss 2:8  @import\a   styles\\styles.scss 1:9    root stylesheet';
+  content: 'Error: This file is already being loaded.\a   \250c \2500 \2500 > styles\\_botones.scss\a 2 \2502  @import "botones";\d\a   \2502          ^^^^^^^^^ new load\a   \2575 \a   \250c \2500 \2500 > styles\\styles.scss\a 1 \2502  @import "botones";\d\a   \2502          \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  original load\a   \2575 \a   styles\\_botones.scss 2:9  @import\a   styles\\styles.scss 1:9    root stylesheet';
 }
